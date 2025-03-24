@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'confessions_of_an_undercover_yapper',
 ]
 
 MIDDLEWARE = [
