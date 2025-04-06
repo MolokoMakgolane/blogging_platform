@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'blogging_platform.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': django_application',
+        'NAME': 'django_application',
         'USER': 'molokomakgolane',
         'PASSWORD': 'yapper89',
         'HOST': 'localhost',
