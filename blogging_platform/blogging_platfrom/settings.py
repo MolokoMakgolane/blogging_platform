@@ -74,7 +74,12 @@ WSGI_APPLICATION = 'blogging_platform.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {
+from django.conf import settings
+
+settings.configure(
+  INSTALLED_APPS=['django.contrib.admin','django.contrib.auth','django.contrib.contenttypes','django.contrib.sessions','django.contrib.messages','django.contrib.staticfiles','confessions_of_an_undercover_yapper',]
+   
+  DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'django_application',
@@ -83,8 +88,8 @@ DATABASES = {
         'HOST': 'localhost',
         'PORT': '3306',
     }
-}
-
+ }
+)
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
